@@ -6,7 +6,7 @@ const user = require('../models/User');
 const bcrypt = require('bcrypt');
 
 router.post('/', async (req, res) => {
-    const {firstName, lastName, userName, password, confirmPassword} = req.body;
+    const {firstName, lastName, username, email, password, confirmPassword} = req.body;
 
     if(password !== confirmPassword) {
 
@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     } else {
 
         try {
-            const existingUser = await user.findOne({userName});
+            const existingUser = await user.findOne({username});
 
             if (existingUser) {
                 return res.status(400).json({ error: "Username exist."});
@@ -27,7 +27,8 @@ router.post('/', async (req, res) => {
                 const newUser = new user({
                     firstName, 
                     lastName,
-                    userName,
+                    username,
+                    email,
                     password: hashedPassword
                 });
 

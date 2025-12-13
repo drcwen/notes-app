@@ -28,7 +28,10 @@ app.use('/signup', signupRoutes);
 */
 
 const loginRoutes = require('../routes/myLogin');
-app.use('/login', loginRoutes);
+app.use('/api/auth', loginRoutes);
+
+const notesRoutes = require('../routes/myNotes');
+app.use('/api', notesRoutes);
 
 const signupRoutes = require('../routes/mySignUp');
 app.use('/signup', signupRoutes);
