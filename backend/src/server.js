@@ -36,6 +36,9 @@ app.use('/api', notesRoutes);
 const signupRoutes = require('../routes/mySignUp');
 app.use('/signup', signupRoutes);
 
+const mySignUp = require('../routes/mySignUp');
+app.use('/mysignup', mySignUp);
+
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {

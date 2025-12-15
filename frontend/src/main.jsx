@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Login from './Login.jsx'
 import UserTable from './UserTable.jsx'
+import SignUp from './SignUp.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Login />
-    <UserTable />
+    <SignUp />
   </StrictMode>,
 )
