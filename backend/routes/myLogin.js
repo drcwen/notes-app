@@ -33,7 +33,6 @@ router.post('/login', async (req, res) => {
             user: {
                 id: findUser._id,
                 username: findUser.username,
-                password: findUser.password
             }
         });
 

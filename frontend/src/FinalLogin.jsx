@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const FinalLogin = () => {
@@ -10,6 +11,8 @@ const FinalLogin = () => {
 
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+    
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -30,6 +33,12 @@ const FinalLogin = () => {
 
             if(res.ok) {
                 setMessage("Sign in successful!");
+
+                localStorage.setItem("token", data.token);
+
+                setTimeout(() => {
+                    navigate("/notes");
+                }, 1500);
 
                 setUsername('');
                 setPassword('');
