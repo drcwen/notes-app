@@ -20,6 +20,7 @@ const Login = () => {
 
       if (res.ok) {
         setResponse(`User created with ID: ${data._id}`);
+
         setName('');
         setEmail('');
       } else {
@@ -31,10 +32,10 @@ const Login = () => {
   };
 
   return (
-    <div className='max-w-md mx-auto mt-10 p-5 border rounded'>
+    <div className='bg-gray-100 p-6 rounded shadow-md max-w-md mx-auto my-6'>
       <h2 className='text-xl'>Enter user data</h2>
       <br></br>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className=' mx-auto my-6'>
         <label>Name: </label>
         <input
           className='border p-1'

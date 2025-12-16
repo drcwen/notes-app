@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const SignUp = () => {
@@ -14,6 +15,8 @@ const SignUp = () => {
 
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -46,6 +49,11 @@ const SignUp = () => {
                 setEmail("");
                 setPassword("");
                 setCPassword("");
+
+                setTimeout(() => {
+                    navigate("/login");
+                }, 1500);
+                
             } else {
                 setError(data.message || "Something went wrong")
             }
