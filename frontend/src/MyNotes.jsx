@@ -71,68 +71,7 @@ const UserNotes = () => {
                 </div>
             </div>
 
-            <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
-                <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2">Card Title</h2>
-                    <p class="text-gray-600 mb-4">
-                        This is a basic card component built with Tailwind CSS utility classes. It's fully customizable and responsive.
-                    </p>
-                    <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
-                        Edit
-                    </a>
-                </div>
-            </div>
-
-            <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
-                <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2">Card Title</h2>
-                    <p class="text-gray-600 mb-4">
-                        This is a basic card component built with Tailwind CSS utility classes. It's fully customizable and responsive.
-                    </p>
-                    <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
-                        Edit
-                    </a>
-                </div>
-            </div>
-
-            <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
-                <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2">Card Title</h2>
-                    <p class="text-gray-600 mb-4">
-                        This is a basic card component built with Tailwind CSS utility classes. It's fully customizable and responsive.
-                    </p>
-                    <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
-                        Edit
-                    </a>
-                </div>
-            </div>
-
-            <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
-                <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2">Card Title</h2>
-                    <p class="text-gray-600 mb-4">
-                        This is a basic card component built with Tailwind CSS utility classes. It's fully customizable and responsive.
-                    </p>
-                    <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
-                        Edit
-                    </a>
-                </div>
-            </div>
-
-            <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
-                <div class="p-6">
-                    <h2 class="text-xl font-semibold mb-2">Card Title</h2>
-                    <p class="text-gray-600 mb-4">
-                        This is a basic card component built with Tailwind CSS utility classes. It's fully customizable and responsive.
-                    </p>
-                    <a 
-                        href="#" 
-                        class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300 cursor-pointer">
-                        Edit
-                    </a>
-                </div>
-            </div>
-
+        
             
         </div>
     </div>
